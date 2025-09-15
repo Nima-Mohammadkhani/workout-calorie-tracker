@@ -1,27 +1,28 @@
-import {
-  DarkTheme,
-  DefaultTheme,
-  ThemeProvider,
-} from "@react-navigation/native";
+import ErrorCallBack from "@/components/ui/errorCallBack";
+import { store } from "@/redux/store";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import { ErrorBoundary } from "react-error-boundary";
+import { View } from "react-native";
 import "react-native-reanimated";
+import Toast from "react-native-toast-message";
+import { Provider } from "react-redux";
 import "../global.css";
-import { useColorScheme } from "@/hooks/use-color-scheme";
-
-export const unstable_settings = {
-  anchor: "(tabs)",
-};
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
   return (
-    <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ErrorBoundary FallbackComponent={ErrorCallBack}>
+        <View className="bg-white h-10" />
+        <StatusBar style="dark" translucent backgroundColor="transparent" />
+
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+
+        <Toast />
+      </ErrorBoundary>
+    </Provider>
   );
 }
