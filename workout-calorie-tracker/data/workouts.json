@@ -1,0 +1,139 @@
+{
+  "workouts": [
+    {
+      "id": 1,
+      "nameEn": "Push Up",
+      "nameFa": "شنا",
+      "bodyParts": ["سینه", "بازو", "شانه"],
+      "goal": "تقویت عضلات فوقانی بدن",
+      "levels": {
+        "easy": {
+          "sets": 2,
+          "reps": 8,
+          "rest": "30 ثانیه",
+          "calories": 15
+        },
+        "medium": {
+          "sets": 3,
+          "reps": 12,
+          "rest": "45 ثانیه",
+          "calories": 25
+        },
+        "hard": {
+          "sets": 4,
+          "reps": 15,
+          "rest": "60 ثانیه",
+          "calories": 35
+        }
+      }
+    },
+    {
+      "id": 2,
+      "nameEn": "Squat",
+      "nameFa": "اسکوات",
+      "bodyParts": ["ران", "باسن", "پا"],
+      "goal": "تقویت عضلات پایین بدن",
+      "levels": {
+        "easy": {
+          "sets": 2,
+          "reps": 10,
+          "rest": "30 ثانیه",
+          "calories": 20
+        },
+        "medium": {
+          "sets": 3,
+          "reps": 15,
+          "rest": "45 ثانیه",
+          "calories": 30
+        },
+        "hard": {
+          "sets": 4,
+          "reps": 20,
+          "rest": "60 ثانیه",
+          "calories": 40
+        }
+      }
+    },
+    {
+      "id": 3,
+      "nameEn": "Plank",
+      "nameFa": "پلانک",
+      "bodyParts": ["شکم", "کمر", "مرکز بدن"],
+      "goal": "تقویت عضلات مرکزی بدن",
+      "levels": {
+        "easy": {
+          "sets": 2,
+          "reps": "30 ثانیه",
+          "rest": "30 ثانیه",
+          "calories": 10
+        },
+        "medium": {
+          "sets": 3,
+          "reps": "45 ثانیه",
+          "rest": "45 ثانیه",
+          "calories": 18
+        },
+        "hard": {
+          "sets": 4,
+          "reps": "60 ثانیه",
+          "rest": "60 ثانیه",
+          "calories": 25
+        }
+      }
+    },
+    {
+      "id": 4,
+      "nameEn": "Jumping Jacks",
+      "nameFa": "پرش جک",
+      "bodyParts": ["پا", "بازو", "قلب"],
+      "goal": "بهبود سلامت قلب و عروق",
+      "levels": {
+        "easy": {
+          "sets": 2,
+          "reps": 15,
+          "rest": "30 ثانیه",
+          "calories": 18
+        },
+        "medium": {
+          "sets": 3,
+          "reps": 20,
+          "rest": "45 ثانیه",
+          "calories": 28
+        },
+        "hard": {
+          "sets": 4,
+          "reps": 25,
+          "rest": "60 ثانیه",
+          "calories": 38
+        }
+      }
+    },
+    {
+      "id": 5,
+      "nameEn": "Burpees",
+      "nameFa": "برپی",
+      "bodyParts": ["تمام بدن", "قلب", "عضلات مرکزی"],
+      "goal": "تمرین کامل برای تمام عضلات",
+      "levels": {
+        "easy": {
+          "sets": 2,
+          "reps": 5,
+          "rest": "45 ثانیه",
+          "calories": 25
+        },
+        "medium": {
+          "sets": 3,
+          "reps": 8,
+          "rest": "60 ثانیه",
+          "calories": 40
+        },
+        "hard": {
+          "sets": 4,
+          "reps": 12,
+          "rest": "75 ثانیه",
+          "calories": 55
+        }
+      }
+    }
+  ]
+}
